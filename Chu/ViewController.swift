@@ -50,7 +50,7 @@ class ViewController: UIViewController {
     engine.attach(avAudioUnit)
     pitchParameter =
       avAudioUnit.auAudioUnit.parameterTree?.allParameters.filter {
-        $0.displayName == "pitch scale"
+        $0.displayName == "Pitch Scale"
       }.first
 
     let input = engine.inputNode
